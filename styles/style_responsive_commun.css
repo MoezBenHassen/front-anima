@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 939px) {
      #logo {
-         border: solid red 2px;
+         /*border: solid red 2px;*/
      }
 
      #header_menu {
