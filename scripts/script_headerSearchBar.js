@@ -13,4 +13,5 @@ $(document).ready(function () {
         easing: 'ease ',
         duration: 1800
     });
+
 });  

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil </title>
+    <title>A propos de nous</title>
     <!--BOOTSTRAP CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https:/7/cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -28,14 +28,12 @@
     <!--CUSTOM CSS -->
     <link rel="stylesheet" href="../styles/style_headerSearchBar.css">
     <link rel="stylesheet" href="../styles/style.css">
-
-    <!--ScrolRevealJS CDN-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+   
     <!--<link rel="stylesheet" href="../styles/style_waves.css">-->
-    <link rel="stylesheet" href="../styles/css_acceuil.css">
     <link rel="stylesheet" href="../styles/style_responsive_commun.css">
-    
+    <link rel="stylesheet" href="../styles/css_infos.css">
+    <link rel="stylesheet" href="../styles/css_acceuil.css">
+ 
     <style>
         body{
             height: 100%;
@@ -47,30 +45,7 @@
         }
     </style>
 
-  <script type="text/javascript">
-  window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer",
-    {
-      title:{
-        text: "% Adoption"
-      },
-      data: [
-      {
-       type: "doughnut",
-       dataPoints: [
-       {  y: 53.37, indexLabel: "Android" },
-       {  y: 35.0, indexLabel: "Apple iOS" },
-       {  y: 7, indexLabel: "Blackberry" },
-       {  y: 2, indexLabel: "Windows Phone" },
-       {  y: 5, indexLabel: "Others" }
-       ]
-     }
-     ]
-   });
-
-    chart.render();
-  }
-  </script>
+  
   <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
  </head>
 <body>
@@ -81,7 +56,7 @@
 
             <!-- HEADER LOGO -->
             <div id="header_logo" data-aos="fade-down-right" >
-                <img src="../ressources/images/logo_pink.png" alt="logo-animadop" id="logo" >
+                <img src="../ressources/images/logo_pink.png" alt="logo-animadop" id="logo" class="header_logo" >
                 <img src="../ressources/images/logoWriting_pink.png"  alt="logo" id="logo_writing" >
             </div>
 
@@ -89,13 +64,13 @@
             <div id="header_menu" data-aos="fade-down">
                 <ul>
                     <li>
-                        <a class="header_menu_item " href="#">Acceuil</a>
+                        <a class="header_menu_item " href="home.html">Acceuil</a>
                     </li>
                     <li>
-                        <a class="header_menu_item" href="infos.html">Infos</a>
+                        <a class="header_menu_item" href="#">Infos</a>
                     </li>
                     <li>
-                        <a class="header_menu_item" href="#">Login</a>
+                        <a class="header_menu_item" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -151,35 +126,52 @@
                     </ul>
                 </div>
             </aside>
-             
-            <div id="slideshow" class="slick multiple-items " data-aos="zoom-out">
-                <div>
-                    <img src="../ressources/images/slideshow_dog.jpg" alt="dog">
-                </div>
-                <div>
-                    <img src="../ressources/images/slideshow_dog2.jpg" alt="article">
-                </div>
-                <div>
-                    <img src="../ressources/images/slideshow_dog3.jpg" alt="concour">
-                </div>
-            </div>
+            
+            <section id="section_infos" data-aos="fade-up-left">
+                <div id="infos">
+                   <span id="infos_title">
+                      
+                       <h1> A propos de nous </h1>
+                   </span>
 
-            <aside id="aside_right"  data-aos="fade-up-right">
-                <div id="urgence">
-                    <a href="#">
-                        <img src="../ressources/images/veterinary.png" alt="">
-                        URGENCE
-                    </a>
-                </div>
-                <div id="stats">
-                    <!--IMPORTANT: THIS PART MAY BE REPLACED AT A LATER TIME WITH OTHER CHARTING METHODS LIKE CHARTIJS OR CHART.JS OR OTHER CANVAS METHOD-->
-                    <div id="chartContainer" style="height: 300px; width: 100%;">
+                    <div id="infos_p">
+                        <div id="div_p">
+                            <div>
+                                <img class="infos_img" src="../ressources/images/logo_pink.png" alt="">
+                                Notre but est assez simple: <br>
+                                > facilité l'introduction des novices au domaines animalier.
+                                Ainsi que populariser <span id="adoption">L'ADOPTION</span> des animaux aux lieux de les acheter
+                            </div>
+
+                            <div> 
+                                Les espèces animalières occupent une place primordiale au sein de notre écosystème. <br>
+                                En effet, c’est des êtres vitaux dans le fonctionnement de 
+                                la vie puisqu’elles, en plus d’être de magnifiques créatures, sont l’équilibre de la vie.  
+                            </div>
+                            <div>
+                                 La domestication ce faisant de plus en plus, nous trouvons énormément d’animaux dans les maisons ou dans les fermes.
+                            En effet, en europe une maison sur trois a des animaux et ce chiffre et en augmentation, en Tunisie on n’a pas encore de chiffre exacte 
+                            mais d’après les associations une famille sur 10 a minimum un animal de compagnie. 
+                            </div> 
+                            <div>
+                                La domestication ce faisant de plus en plus, nous trouvons énormément d’animaux dans les maisons ou dans les fermes.
+                                En effet, en europe une maison sur trois a des animaux et ce chiffre et en augmentation, en Tunisie on n’a pas encore de chiffre exacte 
+                                mais d’après les associations une famille sur 10 a minimum un animal de compagnie. 
+                            </div>
+                            <div>
+                                Récemment, il y a eu une prise de conscience grandissante dans le domaine animalier 
+                                et de plus en plus d’association ainsi que de société voient le jour dans ce domaine sans fin. 
+                            </div>
+                           
+                         
+                        </div>
                     </div>
                 </div>
-            </aside>
+            </section>
+
         </section>
         
-        <section id="section2"  data-aos="fade-in">
+         <section id="section2"  data-aos="fade-in">
              <h3 >Abonnez-vous a notre Newsletter !</h3>
             <form onsubmit="verifMail()" action="" method="get" >
                 <div id="input_div" >
@@ -193,11 +185,11 @@
                  <br> faite don! ;) "</p>
             <a id="donate_link"   href="#" data-aos="fade-up">Donate</a>
          </section>
-        
-        
+       
+         
        
 </section>
-     <footer>
+<footer>
              
             </div>
                 <h5>Contact</h5>
@@ -224,13 +216,12 @@
                     dots: true,
                 });
             });
-
         </script>
         <!-- SCRIPTS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
         <script  src="../scripts/script_headerSearchBar.js"></script>
-        <script src="../scripts/script_menu.js"></script>
+         <script src="../scripts/script_menu.js"></script>
         
 </body>
 </html>
